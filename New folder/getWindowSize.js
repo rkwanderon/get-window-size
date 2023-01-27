@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default getWindowSize = () => {
-  const [res, setRes] = React.useState({ width: 0, height: 0 });
+  const [res, setRes] = useState({ width: 0, height: 0 });
   const getSize = () => {
     return setRes((prev) => {
       return {
@@ -12,7 +12,7 @@ export default getWindowSize = () => {
     });
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener("resize", getSize);
     return () => {
       window.removeEventListener("resize", getSize);

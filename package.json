@@ -1,0 +1,23 @@
+{
+  "name": "get-window-size",
+  "version": "1.0.0",
+  "description": "While resizing browser window, it will return an object with keys height and width of viewport dynamically.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "viewport",
+    "height",
+    "width",
+    "diemensions",
+    "window",
+    "resize"
+  ],
+  "author": "rajnikant kori",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
